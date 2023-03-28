@@ -36,6 +36,7 @@ public class Funcionario {
 	}
 	
 	public String toString() {
-		return "\nNome do Funcionario: " + nome + "\nData de Nascimento: " + sdf.format(nascimento) + "\nCPF: " + cpf;
+		return "\nNome do Funcionario: " + nome + "\nData de Nascimento: " + sdf.format(nascimento) + "\nCPF: " + cpf +
+				"\n*** Endereco ***" + endereco.toString();
 	}
 }

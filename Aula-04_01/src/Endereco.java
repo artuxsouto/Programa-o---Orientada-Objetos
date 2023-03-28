@@ -61,6 +61,7 @@ public class Endereco {
 	public String toString() {
 		return "\nNome da rua: " + rua + ", " 
 				+ numero + "\nBairro: " + bairro + 
-				"\nCEP: " + cep;
+				"\nCEP: " + cep + "\n*** Cidade ***" + 
+				cidade.toString();
 	}
 }

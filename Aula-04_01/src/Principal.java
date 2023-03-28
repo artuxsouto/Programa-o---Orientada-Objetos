@@ -96,18 +96,12 @@ public class Principal {
 		}
 		
 		for (Vendedor v : arrayVendedor) {
-			System.out.println("\n*** Dados Funcionario - Vendedor ***\n" + v.getFuncionario().toString() +
-					"\n*** Endereco ***\n" + v.getFuncionario().getEndereco().toString() + 
-					"\nNome da Cidade: " + v.getFuncionario().getEndereco().getCidade().getNome() + 
-					"\n*** Estado ***\n" + v.getFuncionario().getEndereco().getCidade().getEstado().toString() + 
-					"\n*** Equipe ***\n" + v.getEquipeVenda().getNome());
+			System.out.println("\n*** Dados Funcionario - Vendedor ***\n" + v.getFuncionario().toString() + 
+					"\n*** Equipe Vendas ***\nNome da equipe: " + v.getEquipeVenda().getNome());
 		}
 		
 		for (Gerente g : arrayGerente) {
-			System.out.println("\n*** Dados Funcionario - Gerente ***\n" + g.getFuncionario().toString() +
-					"\n*** Endereco ***\n" + g.getFuncionario().getEndereco().toString() + 
-					"\nNome da Cidade: " + g.getFuncionario().getEndereco().getCidade().getNome() + 
-					"\n*** Estado ***\n" + g.getFuncionario().getEndereco().getCidade().getEstado().toString());
+			System.out.println("\n*** Dados Funcionario - Gerente ***\n" + g.getFuncionario().toString());
 		}
 		sc.close();
 	}

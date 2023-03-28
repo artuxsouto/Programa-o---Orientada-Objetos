@@ -27,4 +27,9 @@ public class Cidade {
 	public void setEstado(Estado estado) {
 		this.estado = estado;
 	}
+	
+	public String toString() {
+		return "\nNome da cidade: " + nome +
+				"\n*** Estado ***" + estado.toString();
+	}
 }
