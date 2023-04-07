@@ -11,7 +11,7 @@ public class ClasseMediaPonderada extends ClasseMedia {
 	}
 	
 	public double calculaMediaPonderada() {
-		double resultado = (valor1 + valor2) / (peso1 + peso2);
+		double resultado = (super.valor1 + super.valor2) / (peso1 + peso2);
 		return resultado;
 	}
 }
