@@ -31,7 +31,13 @@ public class Vendedor extends Funcionario {
 		return equipe;
 	}
 	
-	public void imprimirDadosVendedor() {
+	/*public void imprimirDadosVendedor() {
 		System.out.printf("Equipe: %s%nNome: %s%nData de Nascimento: %s%nCPF: %s%n*** ENDERECO ***%nNome da rua: %s, %d%nBairro: %s%nCEP: %s%n*** CIDADE ***%nNome da cidade: %s%n*** ESTADO ***%nNome do estado: %s%nSigla(UF): %s%nSalario: %.2f", equipe.getNomeEquipe(), nome, sdf.format(nascimento), cpf, endereco.getRua(), endereco.getNumero(), endereco.getBairro(), endereco.getCep(), endereco.getCidade().getNomeCidade(), endereco.getCidade().getEstado().getNomeEstado(), endereco.getCidade().getEstado().getSigla(), salario);
+	}*/
+	
+	@Override
+	public String toString() {
+		return "\n*** DADOS DO FUNCIONARIO - Equipe: " + equipe.getNomeEquipe() +" ***\nNome: " + nome + "\nData de Nascimento: " + 
+				sdf.format(nascimento) + "\nCPF: " + cpf + "\nSalario: " + String.format("%.2f", salario) + "\n*** DADOS ENDERECO ***" + endereco;
 	}
 }

@@ -80,15 +80,17 @@ public class Programa {
 			}
 		}
 		for (Vendedor vendedor : vetorVendedor) {
-			System.out.println("*** Dados Vendedor ***");
-			vendedor.imprimirDadosVendedor();
+			/*System.out.println("*** Dados Vendedor ***");
+			vendedor.imprimirDadosVendedor();*/
+			System.out.println(vendedor);
 		}
 		
 		for (Gerente gerente : vetorGerente) {
-			System.out.println("\n\n*** Dados Gerente ***");
-			gerente.imprimirDadosGerente();
+			/*System.out.println("\n\n*** Dados Gerente ***");
+			gerente.imprimirDadosGerente();*/
+			System.out.println(gerente);
 		}
-		System.out.println("\n*** FIM ***");
+		System.out.println("\n\n*** FIM ***");
 		sc.close();
 	}
 }

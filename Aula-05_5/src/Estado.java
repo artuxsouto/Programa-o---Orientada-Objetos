@@ -20,4 +20,9 @@ public class Estado {
 	public String getSigla() {
 		return sigla;
 	}
+	
+	@Override
+	public String toString() {
+		return "\nNome estado: " + nomeEstado + "\nSigla(UF): " + sigla;
+	}
 }
