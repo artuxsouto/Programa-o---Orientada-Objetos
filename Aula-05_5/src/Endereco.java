@@ -41,4 +41,10 @@ public class Endereco {
 	public Cidade getCidade() {
 		return cidade;
 	}
+	
+	@Override
+	public String toString() {
+		return "\nNome da rua: " + rua + ", " + numero + "\nBairro: " + bairro + 
+				"\nCEP: " + cep + "\n*** DADOS CIDADE ***" + cidade;
+	}
 }

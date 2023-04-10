@@ -164,6 +164,12 @@ public class Programa {
 				System.out.print("\nDigite a senha: ");
 				String senha = sc.nextLine();
 				
+<<<<<<< HEAD
+=======
+				System.out.print("\nDigite a permissao: ");
+				String permissao = sc.nextLine();
+				
+>>>>>>> 31ba73b427ce20ed65c75242046edb8f6782977f
 				colaborador.setId(idUsuario);
 				colaborador.setNome(nome);
 				colaborador.setCpf(cpf);
@@ -191,7 +197,13 @@ public class Programa {
 				colaborador.setEmailPessoal(emailPessoal);
 				colaborador.setEmailCorporativo(emailCorporativo);
 				
+<<<<<<< HEAD
 				usuario.criarUsuario(login, senha);
+=======
+				usuario.setLogin(login);
+				usuario.setSenha(senha);
+				usuario.setPermissao(permissao);
+>>>>>>> 31ba73b427ce20ed65c75242046edb8f6782977f
 				usuario.setColaborador(colaborador);
 				
 				vetorUsuario.add(usuario);

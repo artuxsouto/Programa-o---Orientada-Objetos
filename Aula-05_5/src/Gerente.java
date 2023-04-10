@@ -25,7 +25,12 @@ public class Gerente extends Funcionario {
 		return salario;
 	}
 	
-	public void imprimirDadosGerente() {
+	/*public void imprimirDadosGerente() {
 		System.out.printf("Nome: %s%nData de Nascimento: %s%nCPF: %s%n*** ENDERECO ***%nNome da rua: %s, %d%nBairro: %s%nCEP: %s%n*** CIDADE ***%nNome da cidade: %s%n*** ESTADO ***%nNome do estado: %s%nSigla(UF): %s%nSalario: %.2f", nome, sdf.format(nascimento), cpf, endereco.getRua(), endereco.getNumero(), endereco.getBairro(), endereco.getCep(), endereco.getCidade().getNomeCidade(), endereco.getCidade().getEstado().getNomeEstado(), endereco.getCidade().getEstado().getSigla(), salario);
+	}*/
+	@Override
+	public String toString() {
+		return "\n*** DADOS DO GERENTE ***\nNome: " + nome + "\nData de Nascimento: " + sdf.format(nascimento) + 
+				"\nCPF: " + cpf  + "\nSalario: " + String.format("%.2f", salario) + "\n*** DADOS ENDERECO ***" + endereco.toString();
 	}
 }

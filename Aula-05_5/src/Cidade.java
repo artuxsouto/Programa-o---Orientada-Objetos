@@ -20,4 +20,9 @@ public class Cidade {
 	public Estado getEstado() {
 		return estado;
 	}
+	
+	@Override
+	public String toString() {
+		return "\nNome da Cidade: " + nomeCidade + "\n*** DADOS ESTADO ***" + estado.toString();
+	}
 }

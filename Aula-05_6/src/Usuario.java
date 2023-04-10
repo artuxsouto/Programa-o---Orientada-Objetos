@@ -31,6 +31,13 @@ public class Usuario {
 	public String getPermissao() {
 		return permissao;
 	}
+<<<<<<< HEAD
+=======
+	
+	public void setPermissao(String permissao) {
+		this.permissao = permissao;
+	}
+>>>>>>> 31ba73b427ce20ed65c75242046edb8f6782977f
 		
 	public Colaborador getColaborador() {
 		return colaborador;
@@ -40,6 +47,7 @@ public class Usuario {
 		this.colaborador = colaborador;
 	}
 
+<<<<<<< HEAD
 	public void editarPerfil(Colaborador colaborador, String nome) {
 		String nomeAntigo = colaborador.nome;
 		colaborador.nome = nome;
@@ -59,6 +67,22 @@ public class Usuario {
 	
 	public void apagarUsuario() {
 		this.permissao = "Negado";		
+=======
+	public void editarPerfil() {
+		
+	}
+	
+	public void alterarSenha() {
+		
+	}
+	
+	public void criarUsuario() {
+		
+	}
+	
+	public void apagarUsuario() {
+		
+>>>>>>> 31ba73b427ce20ed65c75242046edb8f6782977f
 	}
 	
 	@Override
