@@ -29,5 +29,5 @@ public abstract class Veiculo {
 		this.ano = ano;
 	}
 	
-	public abstract void exibirDados();
+	public abstract String exibirDados();
 }

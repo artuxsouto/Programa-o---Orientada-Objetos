@@ -16,7 +16,7 @@ public class Caminhao extends Veiculo {
 	}
 
 	@Override
-	public void exibirDados() {
-		
+	public String exibirDados() {
+		return "Caminhao\n- PLACA: " + placa + "\n- ANO: " + ano + "\n- EIXOS: " + eixos;
 	}
 }

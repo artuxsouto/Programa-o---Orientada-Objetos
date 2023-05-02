@@ -16,7 +16,7 @@ public class Onibus extends Veiculo {
 	}
 
 	@Override
-	public void exibirDados() {
-		
+	public String exibirDados() {
+		return "Onibus\n- PLACA: " + placa + "\n- ANO: " + ano + "\n- ASSENTOS: " + assentos;		
 	}
 }
