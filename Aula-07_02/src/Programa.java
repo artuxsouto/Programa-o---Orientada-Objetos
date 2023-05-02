@@ -80,15 +80,15 @@ public class Programa {
 		
 		try(BufferedWriter bw = new BufferedWriter(new FileWriter(caminho, true))) {
 			for(int i = 0; i < vetorRetangulo.size(); i++) {
-				bw.write((i + 1) + " - " + vetorRetangulo.get(i).toString().toLowerCase());
+				bw.write((i + 1) + "° " + vetorRetangulo.get(i).toString().toLowerCase());
 				bw.newLine();
 			}
 			for(int i = 0; i < vetorQuadrado.size(); i++) {
-				bw.write((i + 1) + " - " + vetorQuadrado.get(i).toString().toLowerCase());
+				bw.write((i + 1) + "° " + vetorQuadrado.get(i).toString().toLowerCase());
 				bw.newLine();
 			}
 			for(int i = 0; i < vetorTriangulo.size(); i++) {
-				bw.write((i + 1) + " - " + vetorTriangulo.get(i).toString().toLowerCase());
+				bw.write((i + 1) + "° " + vetorTriangulo.get(i).toString().toLowerCase());
 				bw.newLine();
 			}
 			for(int i = 0; i < vetorCirculo.size(); i++) {
