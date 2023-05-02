@@ -28,7 +28,7 @@ public class Continente {
 	public String imprimirPaises() {
 		String resultado = "";
 		for (Pais pais : conjuntoDePais) {
-			resultado += pais.getNome().toUpperCase() + " | ";
+			resultado += pais.getNome() + " | ";
 		}
 		return resultado;
 	}
@@ -108,7 +108,7 @@ public class Continente {
 	public String relatorio() {
 		String relatorio = "";
 		if(conjuntoDePais.size() == 0) {
-			String antartida = "ANTARTIDA";
+			String antartida = "Antartida";
 			if(antartida.equals(nome)) {
 				relatorio = "CONTINENTE: " + nome + " *** PROPRIEDADE DA HUMANIDADE ONDE NINGUÉM PODE EXPLORAR SEUS RECURSOS ***";
 			}
