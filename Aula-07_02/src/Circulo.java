@@ -22,21 +22,21 @@ public class Circulo extends Figura {
 
 	@Override
 	public void setCor(String cor) {
-		
+		this.cor = cor;
 	}
 
 	@Override
 	public String getCor() {
-		return null;
+		return cor;
 	}
 	
 	@Override
 	public String toString() {
-		return "";
+		return "triangulo\n" + "- cor: " + cor + "\n- raio: " + raio + "cm" + "\n- area: " + area() + "cm";
 	}
 
 	@Override
 	public double area() {
-		return 0;
+		return (raio * raio) * 3.14;
 	}
 }

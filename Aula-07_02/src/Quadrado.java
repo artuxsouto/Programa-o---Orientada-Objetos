@@ -7,6 +7,6 @@ public class Quadrado extends Retangulo {
 	
 	@Override
 	public String toString() {
-		return "";
+		return "quadrado\n" + "- cor: " + cor + "\n- lado1: " + lado1 + "cm" + "\n- lado2: " + lado2 + "cm" + "\n- area: " + area() + "cm";
 	}
 }

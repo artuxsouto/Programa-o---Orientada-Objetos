@@ -30,21 +30,21 @@ public class Triangulo extends Figura {
 
 	@Override
 	public void setCor(String cor) {
-		
+		this.cor = cor;
 	}
 
 	@Override
 	public String getCor() {
-		return null;
+		return cor;
 	}
 	
 	@Override
 	public String toString() {
-		return "";
+		return "triangulo\n" + "- cor: " + cor + "\n- base: " + base + "cm" + "\n- altura: " + altura + "cm" + "\n- area: " + area() + "cm";
 	}
 
 	@Override
 	public double area() {
-		return 0;
+		return (base * altura) / 2;
 	}
 }

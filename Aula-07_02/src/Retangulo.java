@@ -27,21 +27,21 @@ public class Retangulo extends Figura {
 
 	@Override
 	public void setCor(String cor) {
-		
+		this.cor = cor;
 	}
 
 	@Override
 	public String getCor() {
-		return null;
+		return cor;
 	}
 	
 	@Override
 	public String toString() {
-		return "";
+		return "retângulo\n" + "- cor: " + cor + "\n- lado1: " + lado1 + "cm" + "\n- lado2: " + lado2 + "cm" +"\n- area: " + area() + "cm";
 	}
 
 	@Override
 	public double area() {
-		return 0;
+		return lado1 * lado2;
 	}
 }
